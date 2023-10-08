@@ -12,6 +12,9 @@ const affirm = () => {
     return affirmations[rand];
 };
 
-document.getElementById("affirmation-button").addEventListener("click", () => {
-    document.getElementById("affirmation-text").innerText = affirm();
+window.addEventListener('DOMContentLoaded', (event) => {
+    document.getElementById("affirmation-button").addEventListener("click", () => {
+        document.getElementById("affirmation-text").innerText = affirm();
+    });
 });
+
